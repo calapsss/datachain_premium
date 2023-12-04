@@ -1,0 +1,27 @@
+credentials:
+  usernames:
+    sandres:
+      email: seanmandres@gmail.com
+      name: Sean Andres
+      password: "$2b$12$FUSscfHFmdIPDZ8CZI3bB.oPUsXeBvMxhbp1AT8EzCJlZ77edt0tG"
+    calapips:
+      email: c24charles.calapini@afacademy.af.edu
+      name: Charles Calapini
+      password: "$2b$12$FUSscfHFmdIPDZ8CZI3bB.oPUsXeBvMxhbp1AT8EzCJlZ77edt0tG"
+    abirnker:
+      email: andre.birkner@afacademy.af.edu
+      name: Andre Birkner
+      password: "$2b$12$FUSscfHFmdIPDZ8CZI3bB.oPUsXeBvMxhbp1AT8EzCJlZ77edt0tG"
+    nharper:
+      email: c24noah.harper@afacademy.af.edu
+      name: Noah Harper
+      password: "$2b$12$FUSscfHFmdIPDZ8CZI3bB.oPUsXeBvMxhbp1AT8EzCJlZ77edt0tG"
+      
+cookie:
+  expiry_days: 3
+  key: randokey
+  name: randocookie
+
+preauthorized:
+  emails:
+  - c24sean.andres@afacademy.af.edu
