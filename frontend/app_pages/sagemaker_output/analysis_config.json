@@ -1,0 +1,49 @@
+{
+    "label": "MEDV",
+    "headers": [
+        "MEDV",
+        "CRIM",
+        "ZN",
+        "INDUS",
+        "CHAS",
+        "NOX",
+        "RM",
+        "AGE",
+        "DIS",
+        "RAD",
+        "TAX",
+        "PTRATIO",
+        "B",
+        "LSTAT"
+    ],
+    "dataset_type": "text/csv",
+    "methods": {
+        "shap": {
+            "baseline": [
+                [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            ],
+            "num_samples": 2048,
+            "agg_method": "mean_abs",
+            "save_local_shap_values": true,
+            "use_logit": false
+        },
+        "report": {
+            "name": "explainability-report",
+            "title": "Explainability Report"
+        }
+    }
+}
