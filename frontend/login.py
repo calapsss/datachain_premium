@@ -143,7 +143,6 @@ if authentication_status:
         andre.create_page()
     if selected=="SQL":
         pips.create_page()
-        pips.hi()
     # move the logo up
     page_logo = f"""
     <style>
