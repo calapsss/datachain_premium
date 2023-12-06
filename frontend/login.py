@@ -23,7 +23,7 @@ def create_about():
     with st.expander("Data Assist"):
         st.code("An AI chatbot that can help you understand data,\nperform machine learning, and create visualizations.")
     with st.expander("SageMaker"):
-        st.code("An pipeline to AWS SageMaker that can create notebooks\nfor you to send to your teammates")
+        st.code("A pipeline to AWS SageMaker that can create notebooks\nfor you to send to your teammates")
     with st.expander("SQL"):
         st.code("A demo of an LLM interacting with a SQL Database\nto retrieve data with natural language.")
 
@@ -78,7 +78,8 @@ userdb_path = Path(__file__).parent.parent / "authentication/userdb.yaml"
 with userdb_path.open("rb") as file:
     config = yaml.load(file, Loader=SafeLoader)
 
-st.image(logo)
+#st.image(logo)
+
 authenticator = stauth.Authenticate(
     config['credentials'],
     config['cookie']['name'],
@@ -99,14 +100,14 @@ if authentication_status == None:
 
 if authentication_status:
     with st.sidebar:
-        st.image(logo)
-        st.title(f"Welcome, { name.split(' ',1)[0]}")
+        #st.image(logo)
+        st.title(f"Welcome,  {name.split(' ', 1)[0]}")
         authenticator.logout("Logout", "sidebar")
         #st.write(os.getcwd()) # for dev
 
         selected = option_menu(
             menu_title = None,
-            options = ["About", "Data Assist", "SageMaker", "SQL", "Example"], #add your optios
+            options = ["About", "Data Assist"],#, "SageMaker", "SQL", "Example"], #add your optios
             icons=["house","robot","book", "database-check"],
             menu_icon="menu_down",
             default_index=0,
@@ -152,6 +153,6 @@ if authentication_status:
     }}
     </style
     """
-
-    st.markdown(page_logo, unsafe_allow_html=True)
+    #TODO: UNHIDE
+    #st.markdown(page_logo, unsafe_allow_html=True)
 

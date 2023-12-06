@@ -76,7 +76,7 @@ def create_page():
                         }
     with st.sidebar:
         chosen_model = st.radio("Choose your model:", available_models.keys(), index = 1)
-        st.title(chosen_model)
+        #st.title(chosen_model)
 
     if bool(datasets):
         st.dataframe(datasets[chosen_dataset])
@@ -85,8 +85,8 @@ def create_page():
         # first prompt pipeline
         if not responses:
             if prompt:
-                with st.chat_message("user"):
-                    st.markdown(prompt)
+                #with st.chat_message("user"):
+                    #st.markdown(prompt)
                 response, code_response = chain.initial_chain(prompt, chosen_dataset, chosen_model)
         
                 # append prompt and response
