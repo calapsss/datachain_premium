@@ -78,7 +78,7 @@ userdb_path = Path(__file__).parent.parent / "authentication/userdb.yaml"
 with userdb_path.open("rb") as file:
     config = yaml.load(file, Loader=SafeLoader)
 
-#st.image(logo)
+st.image(logo)
 
 authenticator = stauth.Authenticate(
     config['credentials'],
@@ -107,7 +107,7 @@ if authentication_status:
 
         selected = option_menu(
             menu_title = None,
-            options = ["About", "Data Assist"],#, "SageMaker", "SQL", "Example"], #add your optios
+            options = ["About", "Data Assist", "SageMaker", "SQL", "Example"], #add your optios
             icons=["house","robot","book", "database-check"],
             menu_icon="menu_down",
             default_index=0,
@@ -152,6 +152,6 @@ if authentication_status:
     }}
     </style
     """
-    #TODO: UNHIDE
-    #st.markdown(page_logo, unsafe_allow_html=True)
+    
+    st.markdown(page_logo, unsafe_allow_html=True)
 

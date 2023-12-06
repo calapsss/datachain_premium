@@ -3,6 +3,7 @@ import streamlit as st
 from app_pages.backend.sqlchain_backend import SQLChain
 
 def create_page():
+    st.markdown("<h2 style='text-align: center;padding-top: 0rem;'>Natural Language SQL Querying</h2>", unsafe_allow_html=True)
     def query_page():
         # Replace the Django form with Streamlit's input functions
         query = st.text_input('Enter your query')\
